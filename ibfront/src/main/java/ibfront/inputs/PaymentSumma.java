@@ -24,4 +24,5 @@ public class PaymentSumma extends Inputs{
         return dbl.longValue();
     }
 
+
 }

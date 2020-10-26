@@ -20,4 +20,5 @@ public class ServerResultPack extends Pack implements Serializable {
         this.hint = "";
     }
 
+
 }

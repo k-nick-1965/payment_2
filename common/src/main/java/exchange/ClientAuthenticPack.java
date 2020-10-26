@@ -22,4 +22,5 @@ public class ClientAuthenticPack extends Pack implements Serializable {
         this.passWord = "";
     }
 
+
 }
