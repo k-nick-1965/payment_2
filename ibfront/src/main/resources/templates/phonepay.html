@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Платеж</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Заполните реквизиты платежа:</h1>
+<form th:action="@{/phonepay}"
+      th:object="${payForm}" method="POST">
+    <table>
+        <tr>
+            <td>Номер телефона:</td>
+            <td><input type="text" name="phonenumber" th:field="*{phoneNumber}" /></td>
+        </tr>
+        <tr>
+            <td>Счет списания  :</td>
+            <td>
+<!--                <select name="account" id="account_N" th:field="*{account}" >-->
+                <select th:field="*{account}" >
+<!--                    <option th:each="accnt : ${accounts}"-->
+                    <option th:each="accnt : ${allAccounts}"
+                            th:value="${accnt}"
+                            th:text="${accnt}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Сумма :</td>
+            <td><input type="text" name="summa" th:field="*{summa}" /></td>
+        </tr>
+        <tr>
+            <td>Валюта :</td>
+            <td><input type="text" name="currency" th:field="*{currency}" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="OK" /></td>
+        </tr>
+    </table>
+</form>
+
+<br/>
+
+<!-- Check if errorMessage is not null and not empty -->
+
+<div th:if="${errorMessage}" th:utext="${errorMessage}"
+     style="color:red;font-style:italic;">
+</div>
+
+</body>
+</html>
