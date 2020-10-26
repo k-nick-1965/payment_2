@@ -13,7 +13,6 @@ public enum ExchangeResult {
     PACK_OPENING_ERROR, // "Ошибка открытия пакета."
     PACK_DUPLICATE_ERROR, // "Ошибка. Повтор пакета."
     INTERNAL_ERROR; //"Внутреняя ошибка приложения (не реализована услуга)."
-
 }
 
 //public enum ExchangeErrors {

@@ -18,5 +18,4 @@ public class PaymentCurrency extends Inputs{
         return Integer.parseInt(super.getInputString());
     }
 
-
 }

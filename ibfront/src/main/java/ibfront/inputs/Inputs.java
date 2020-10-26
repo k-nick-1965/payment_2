@@ -18,5 +18,4 @@ public abstract class Inputs{
     public abstract boolean check();
     public abstract Object conversion();
 
-
 }

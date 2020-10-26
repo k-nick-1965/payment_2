@@ -13,5 +13,4 @@ public class PayForm {
     private String summa;
     private String currency;
 
-
 }

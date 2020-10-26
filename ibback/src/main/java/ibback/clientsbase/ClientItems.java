@@ -43,5 +43,4 @@ public class ClientItems {
         else return giveClientID(clientNumber);
     }
 
-
 }

@@ -42,6 +42,5 @@ public class ClientItem {
     public String toString() {
         return clientNumber + passWordHash + fullName.toString();
     }
-
 }
 

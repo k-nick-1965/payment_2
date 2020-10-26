@@ -47,5 +47,4 @@ public class IBClient /*implements ExchWithServer*/ {
         this.port = Integer.parseInt(properties.getProperty("port"));
     }
 
-
 }

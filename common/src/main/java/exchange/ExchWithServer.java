@@ -8,5 +8,4 @@ public interface ExchWithServer {
 
     void sendToServer(Pack cont) throws IOException;
 
-
 }

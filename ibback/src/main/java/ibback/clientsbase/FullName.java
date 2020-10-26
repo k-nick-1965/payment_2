@@ -19,5 +19,4 @@ public class FullName {
         return lastname + firstname + middlename;
     }
 
-
 }

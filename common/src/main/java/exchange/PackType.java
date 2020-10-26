@@ -6,5 +6,4 @@ public enum PackType {
     PAYMENT,
     ACCOUNTS,
     RESULT;
-
 }
